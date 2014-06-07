@@ -23,5 +23,8 @@ See https://pypi.python.org/pypi/galileo/0.4 for more information about
 - a 64 bit linux machine
 - docker
 
+###Image size
+As of June 2014 the 'google/python' base image is 393MB. The install of galileo and it's dependencies adds 14MB to this for a total image size of 407MB.
+
 ###Notes
 The base image is "google/python". This image was chosen to minimise the size of *this* container (but not necessarily the overall image size). The base image may change in the future. 
