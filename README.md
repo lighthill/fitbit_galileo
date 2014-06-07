@@ -9,12 +9,12 @@ This package syncs fitbit devices (except fitbit Ultra) using the [galileo](http
 ###Usage
 Running the command
 
-`docker run --privileged -v /dev/bus/usb:/dev/bus/usb`
+`docker run --privileged -v /dev/bus/usb:/dev/bus/usb lighthill/fitbit-galileo`
 
 will start the galileo daemon automatically and sync any nearby fitbit device every 15 minutes. The `--privileged -v /dev/bus/usb:/dev/bus/usb` command is necessary to grant docker access to the USB devices on the host.
 
 If you want to override the default behaviour then run something like 
-`docker run -a -t --privileged -v dev/bus/usb:/dev/bus/usb galileo`
+`docker run -a -t --privileged -v dev/bus/usb:/dev/bus/usb lighthill/fitbit-galileo galileo`
 See https://pypi.python.org/pypi/galileo/0.4 for more information about 
 *galileo*.
 
